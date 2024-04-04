@@ -23,6 +23,9 @@ def n3(x1):
 def n4(x1):
     return np.power(x1, 4)
 
+def pow(x1, x2):
+    return np.power(x1, x2)
+
 def sigmoid(x1):
     return 1 / (1 + np.exp(-x1))
 
@@ -62,7 +65,8 @@ unprotected_ops = [
     Token(n3, "n3", arity=1, complexity=3),
     Token(n4, "n4", arity=1, complexity=3),
     Token(sigmoid, "sigmoid", arity=1, complexity=4),
-    Token(harmonic, "harmonic", arity=1, complexity=4)
+    Token(harmonic, "harmonic", arity=1, complexity=4),
+    Token(pow, "pow", arity=2, complexity=4)
 ]
 
 
